@@ -41,13 +41,14 @@
     <section class="events text-center py-5">
         <div class="container">
             <h2>Past Events</h2>
-            <ul id="event-list" class="list-group">
-                <li class="list-group-item">26 April 2024 - Denmark - The AXE Band - Copenhagen, Denmark <a href="#">Details</a></li>
-                <li class="list-group-item">15 May 2024 - Germany - Rock Masters - Berlin, Germany <a href="#">Details</a></li>
-                <li class="list-group-item">05 June 2024 - USA - Jazz Nights - New York, USA <a href="#">Details</a></li>
-                <li class="list-group-item">20 July 2024 - UK - Pop Stars Live - London, UK <a href="#">Details</a></li>
-                <li class="list-group-item">10 August 2024 - France - Electro Beats - Paris, France <a href="#">Details</a></li>
-            </ul>
+            <div class="row" id="event-list">
+                <div class="col-md-12 mb-3"><strong>Date</strong> | <strong>Country</strong> | <strong>Band</strong> | <strong>Location</strong> | <strong>Details</strong></div>
+                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>26 April 2024</span> <span>Denmark</span> <span>The AXE Band</span> <span>Copenhagen</span> <a href="#">Details</a></div>
+                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>15 May 2024</span> <span>Germany</span> <span>Rock Masters</span> <span>Berlin</span> <a href="#">Details</a></div>
+                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>05 June 2024</span> <span>USA</span> <span>Jazz Nights</span> <span>New York</span> <a href="#">Details</a></div>
+                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>20 July 2024</span> <span>UK</span> <span>Pop Stars Live</span> <span>London</span> <a href="#">Details</a></div>
+                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>10 August 2024</span> <span>France</span> <span>Electro Beats</span> <span>Paris</span> <a href="#">Details</a></div>
+            </div>
             <button id="show-more" class="btn btn-secondary mt-3">Show more events</button>
         </div>
     </section>
@@ -60,29 +61,24 @@
     <script>
         document.getElementById('show-more').addEventListener('click', function() {
             const moreEvents = [
-                "25 September 2024 - Spain - Latin Groove - Madrid, Spain",
-                "30 October 2024 - Italy - Opera Nights - Rome, Italy",
-                "15 November 2024 - Canada - Indie Vibes - Toronto, Canada",
-                "01 December 2024 - Australia - Rock Revolution - Sydney, Australia",
-                "10 January 2025 - Japan - Tokyo Beats - Tokyo, Japan",
-                "20 February 2025 - Brazil - Samba Rhythms - Rio de Janeiro, Brazil",
-                "15 March 2025 - Netherlands - EDM Festival - Amsterdam, Netherlands",
-                "05 April 2025 - Sweden - Nordic Tunes - Stockholm, Sweden",
-                "25 May 2025 - Mexico - Fiesta Music - Mexico City, Mexico",
-                "10 June 2025 - Russia - Classical Evenings - Moscow, Russia",
-                "15 July 2025 - South Africa - Afro Jazz - Cape Town, South Africa",
-                "05 August 2025 - India - Bollywood Night - Mumbai, India",
-                "20 September 2025 - China - Beijing Live - Beijing, China",
-                "01 October 2025 - UAE - Desert Beats - Dubai, UAE",
-                "10 November 2025 - Thailand - Bangkok Sounds - Bangkok, Thailand"
+                "25 September 2024 | Spain | Latin Groove | Madrid | Details",
+                "30 October 2024 | Italy | Opera Nights | Rome | Details",
+                "15 November 2024 | Canada | Indie Vibes | Toronto | Details",
+                "01 December 2024 | Australia | Rock Revolution | Sydney | Details",
+                "10 January 2025 | Japan | Tokyo Beats | Tokyo | Details",
+                "20 February 2025 | Brazil | Samba Rhythms | Rio de Janeiro | Details",
+                "15 March 2025 | Netherlands | EDM Festival | Amsterdam | Details",
+                "05 April 2025 | Sweden | Nordic Tunes | Stockholm | Details",
+                "25 May 2025 | Mexico | Fiesta Music | Mexico City | Details",
+                "10 June 2025 | Russia | Classical Evenings | Moscow | Details"
             ];
             
             const eventList = document.getElementById('event-list');
             moreEvents.forEach(event => {
-                const li = document.createElement('li');
-                li.classList.add('list-group-item');
-                li.innerHTML = `${event} <a href='#'>Details</a>`;
-                eventList.appendChild(li);
+                const div = document.createElement('div');
+                div.classList.add('col-md-12', 'd-flex', 'justify-content-between', 'border-bottom', 'py-2');
+                div.innerHTML = event.replace('|', '</span> <span>').replace('|', '</span> <span>').replace('|', '</span> <span>').replace('|', '</span> <a href="#">') + '</a>';
+                eventList.appendChild(div);
             });
             this.style.display = 'none';
         });
