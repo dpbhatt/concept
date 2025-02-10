@@ -6,6 +6,8 @@
     <title>Concert Event</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         .hero {
             position: relative;
@@ -26,6 +28,16 @@
             padding: 20px;
             border-radius: 10px;
             max-width: 80%;
+        }
+        /* Styling for social media icons in footer */
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #ddd;
         }
     </style>
 </head>
@@ -63,44 +75,89 @@
     <section class="events text-center py-5">
         <div class="container">
             <h2>Past Events</h2>
-            <div class="row" id="event-list">
-                <div class="col-md-12 mb-3"><strong>Date</strong> | <strong>Country</strong> | <strong>Band</strong> | <strong>Location</strong> | <strong>Details</strong></div>
-                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>26 April 2024</span> <span>Denmark</span> <span>The AXE Band</span> <span>Copenhagen</span> <a href="#">Details</a></div>
-                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>15 May 2024</span> <span>Germany</span> <span>Rock Masters</span> <span>Berlin</span> <a href="#">Details</a></div>
-                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>05 June 2024</span> <span>USA</span> <span>Jazz Nights</span> <span>New York</span> <a href="#">Details</a></div>
-                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>20 July 2024</span> <span>UK</span> <span>Pop Stars Live</span> <span>London</span> <a href="#">Details</a></div>
-                <div class="col-md-12 d-flex justify-content-between border-bottom py-2"><span>10 August 2024</span> <span>France</span> <span>Electro Beats</span> <span>Paris</span> <a href="#">Details</a></div>
-            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Country</th>
+                        <th>Band</th>
+                        <th>Location</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody id="event-list">
+                    <tr>
+                        <td>26 April 2024</td>
+                        <td>Denmark</td>
+                        <td>The AXE Band</td>
+                        <td>Copenhagen</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>15 May 2024</td>
+                        <td>Germany</td>
+                        <td>Rock Masters</td>
+                        <td>Berlin</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>05 June 2024</td>
+                        <td>USA</td>
+                        <td>Jazz Nights</td>
+                        <td>New York</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>20 July 2024</td>
+                        <td>UK</td>
+                        <td>Pop Stars Live</td>
+                        <td>London</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                    <tr>
+                        <td>10 August 2024</td>
+                        <td>France</td>
+                        <td>Electro Beats</td>
+                        <td>Paris</td>
+                        <td><a href="#">Details</a></td>
+                    </tr>
+                </tbody>
+            </table>
             <button id="show-more" class="btn btn-secondary mt-3">Show more events</button>
         </div>
     </section>
     
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Concert Event. All rights reserved.</p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+        </div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.getElementById('show-more').addEventListener('click', function() {
             const moreEvents = [
-                "25 September 2024 | Spain | Latin Groove | Madrid | Details",
-                "30 October 2024 | Italy | Opera Nights | Rome | Details",
-                "15 November 2024 | Canada | Indie Vibes | Toronto | Details",
-                "01 December 2024 | Australia | Rock Revolution | Sydney | Details",
-                "10 January 2025 | Japan | Tokyo Beats | Tokyo | Details",
-                "20 February 2025 | Brazil | Samba Rhythms | Rio de Janeiro | Details",
-                "15 March 2025 | Netherlands | EDM Festival | Amsterdam | Details",
-                "05 April 2025 | Sweden | Nordic Tunes | Stockholm | Details",
-                "25 May 2025 | Mexico | Fiesta Music | Mexico City | Details",
-                "10 June 2025 | Russia | Classical Evenings | Moscow | Details"
+                ["25 September 2024", "Spain", "Latin Groove", "Madrid", "Details"],
+                ["30 October 2024", "Italy", "Opera Nights", "Rome", "Details"],
+                ["15 November 2024", "Canada", "Indie Vibes", "Toronto", "Details"],
+                ["01 December 2024", "Australia", "Rock Revolution", "Sydney", "Details"],
+                ["10 January 2025", "Japan", "Tokyo Beats", "Tokyo", "Details"],
+                ["20 February 2025", "Brazil", "Samba Rhythms", "Rio de Janeiro", "Details"],
+                ["15 March 2025", "Netherlands", "EDM Festival", "Amsterdam", "Details"],
+                ["05 April 2025", "Sweden", "Nordic Tunes", "Stockholm", "Details"],
+                ["25 May 2025", "Mexico", "Fiesta Music", "Mexico City", "Details"],
+                ["10 June 2025", "Russia", "Classical Evenings", "Moscow", "Details"]
             ];
             
             const eventList = document.getElementById('event-list');
             moreEvents.forEach(event => {
-                const div = document.createElement('div');
-                div.classList.add('col-md-12', 'd-flex', 'justify-content-between', 'border-bottom', 'py-2');
-                div.innerHTML = event.replace('|', '</span> <span>').replace('|', '</span> <span>').replace('|', '</span> <span>').replace('|', '</span> <a href="#">') + '</a>';
-                eventList.appendChild(div);
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${event[0]}</td><td>${event[1]}</td><td>${event[2]}</td><td>${event[3]}</td><td><a href="#">${event[4]}</a></td>`;
+                eventList.appendChild(tr);
             });
             this.style.display = 'none';
         });
