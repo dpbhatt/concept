@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .event-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+        .event-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4 event-container">
+        <h2 id="eventTitle">Sample Event</h2>
+        <div class="gallery">
+            <button class="arrow prev" onclick="prevImage()">&#10094;</button>
+            <img id="eventImage" class="event-image" src="https://images.placeholders.dev/?width=300&height=300" alt="Event Image">
+            <button class="arrow next" onclick="nextImage()">&#10095;</button>
+        </div>
+        <p><strong>Date:</strong> <span id="eventDate">March 10, 2025</span></p>
+        <p><strong>Location:</strong> <span id="eventLocation">New York City, NY</span></p>
+        <p id="eventDetail">This is a sample event detail description. It provides an overview of the event, including its purpose, schedule, and key highlights.</p>
+        <a href="index.html" class="btn btn-primary">Back to List</a>
+    </div>
+
+    <script>
+        const images = [
+            "https://images.placeholders.dev/?width=300&height=300",
+            "https://images.placeholders.dev/?width=200&height=200",
+            "https://images.placeholders.dev/?width=250&height=250"
+        ];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            document.getElementById("eventImage").src = images[index];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "ArrowLeft") {
+                prevImage();
+            } else if (event.key === "ArrowRight") {
+                nextImage();
+            }
+        });
+    </script>
+</body>
+</html>
