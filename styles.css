@@ -14,7 +14,7 @@ section {
 
 
   /* Hero Section Styles */
-.hero {
+.subhero {
     background-image: url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
@@ -24,22 +24,22 @@ section {
     justify-content: center;
 }
 
-.hero h1 {
+.subhero h1 {
     font-size: 2.5rem; /* Customize the size of the heading */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
 }
 
-.hero p {
+.subhero p {
     font-size: 1.25rem; /* Customize the size of the paragraph */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
 }
 
 /* Optional: Add responsiveness */
 @media (max-width: 768px) {
-    .hero h1 {
+    .subhero h1 {
         font-size: 2rem;
     }
-    .hero p {
+    .subhero p {
         font-size: 1rem;
     }
 }
