@@ -46,6 +46,9 @@
         .social-icons a:hover {
             color: #ddd;
         }
+                .featured-events .card {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +85,51 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod orci et urna fermentum, in aliquam ante consequat. Praesent aliquam convallis magna, non dictum nulla dapibus non. Etiam nec ipsum nec velit iaculis volutpat. Ut malesuada, risus non euismod pretium, nisi magna convallis risus, id varius augue purus at arcu. Sed ut venenatis arcu. Integer at purus ac enim scelerisque laoreet sit amet a nunc. Sed euismod mollis lorem, in vestibulum velit vehicula nec. Integer quis mi est. Nunc suscipit orci at arcu fermentum, sed dignissim dui lacinia.</p>
         <p>Nulla gravida, nulla nec faucibus dictum, turpis velit lobortis libero, a auctor magna risus nec leo. Integer at est ac eros auctor convallis. Curabitur a magna eu mi iaculis suscipit. Etiam vitae orci ac nisi maximus posuere. Suspendisse potenti. Phasellus auctor lacinia ante, ac dignissim purus euismod ac. Ut sit amet dolor nulla. Nam et eros a neque cursus suscipit a at quam.</p>
     
+        </div>
+    </section>
+    
+     <section class="featured-events py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Events</h2>
+            <div class="row" id="featured-events">
+                <script>
+                    const events = [
+                        {title: "Rock Night", date: "March 15, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Jazz Evening", date: "April 10, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Pop Extravaganza", date: "May 5, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Blues Vibes", date: "June 20, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "EDM Festival", date: "July 8, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Classical Nights", date: "August 12, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Metal Mayhem", date: "September 25, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
+                        {title: "Country Tunes", date: "October 18, 2025", img: "https://images.placeholders.dev/?width=300&height=300"}
+                    ];
+                    
+                    function loadEvents(count) {
+                        const container = document.getElementById('featured-events');
+                        container.innerHTML = "";
+                        for (let i = 0; i < count; i++) {
+                            if (events[i]) {
+                                container.innerHTML += `
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <img src="${events[i].img}" class="card-img-top" alt="Event Image">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">${events[i].title}</h5>
+                                                <p class="card-text">${events[i].date}</p>
+                                                <a href="eventdetail.html" class="btn btn-primary">Show More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                            }
+                        }
+                    }
+                    loadEvents(6);
+                </script>
+            </div>
+            <div class="text-center mt-3">
+                <button id="show-more-events" class="btn btn-secondary">Show More</button>
+            </div>
         </div>
     </section>
     
@@ -172,6 +220,11 @@
                 tr.innerHTML = `<td>${event[0]}</td><td>${event[1]}</td><td>${event[2]}</td><td>${event[3]}</td><td><a href="#">${event[4]}</a></td>`;
                 eventList.appendChild(tr);
             });
+            this.style.display = 'none';
+        });
+        loadEvents(6);
+         document.getElementById('show-more-events').addEventListener('click', function() {
+            loadEvents(events.length);
             this.style.display = 'none';
         });
     </script>
