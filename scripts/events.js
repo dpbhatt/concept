@@ -28,7 +28,7 @@ function renderTable(filteredData)
                   <td class="p-3">${item.eventdate}</td>
                   <td class="p-3">${item.title}</td>                
                   <td class="p-3">${item.venue}</td>                  
-                  <td class="p-3"><a href="/eventdetail.html?id=${item.id}">Details</a></td>
+                  <td class="p-3"><a href="eventdetail.html?id=${item.id}">Details</a></td>
               `;
             tableBody.appendChild(row);
         });
