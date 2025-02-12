@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background: linear-gradient(270deg, #004e92, #4285f4, #34a853, #fbbc05);
+  background: linear-gradient(270deg, #0170B9, #4285f4, #35ee66, #eec446);
   background-size: 400% 400%;
   animation: gradientBG 120s ease infinite;
   color: white;
@@ -35,7 +35,7 @@ section {
   flex: 1;
 }
 
-/* Hero Section Styles */
+/* Sub Hero Section Styles */
 .subhero {
   background-image: url("images/subhero.png");
   background-size: cover;
@@ -56,6 +56,7 @@ section {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
 }
 
+/* Sub Hero Section Styles */
 .hero {
   position: relative;
   text-align: center;
@@ -76,13 +77,16 @@ section {
   border-radius: 10px;
   max-width: 80%;
 }
+
 .hero-text h2 {
   font-size: 3rem; /* Increased font size */
   font-weight: bold;
 }
+
 .hero-text p {
   font-size: 1.5rem; /* Adjusted font size */
 }
+
 /* Styling for social media icons in footer */
 .social-icons a {
   color: white;
@@ -105,6 +109,7 @@ section {
 .contact-info h2 {
   margin-bottom: 20px;
 }
+
 /* Optional: Add responsiveness */
 @media (max-width: 768px) {
   .subhero h1 {
