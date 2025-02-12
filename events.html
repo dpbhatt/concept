@@ -1,153 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Nepal Music Festival</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Concert Night</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
 
-    <section class="subhero text-white text-center py-5">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Nepal Music Festival</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <h1 class="display-4">Events</h1>
-        <p class="lead">
-          Music events are more than just performances; they are moments where
-          melodies become memories, strangers become friends, and the rhythm of
-          life beats in unison with every heart in the crowd.
-        </p>
+        <a class="navbar-brand" href="index.html">Concert Night</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <section class="container my-5">
-      <h2>Events List</h2>
-      <input
-        type="text"
-        id="searchInput"
-        class="form-control mb-4"
-        placeholder="Search by title or description..."
-      />
-
-      <div class="table-responsive">
-        <table class="table table-striped table-responsive table-hover text-lg">
-          <thead>
-            <tr>
-              <th class="p-3">Date</th>
-              <th class="p-3">Title</th>
-              <th class="p-3">Venue</th>
-              <th class="p-3">Details</th>
-            </tr>
-          </thead>
-          <tbody id="tableBody">
-            <!-- Dynamic table rows will be added here -->
-          </tbody>
-        </table>
-        <p
-          id="noResultsMessage"
-          class="text-center text-danger border border-danger"
-          style="display: none"
-        >
-          No matching events found!
-        </p>
-      </div>
-
-      <nav aria-label="Page navigation">
-        <ul class="pagination" id="pagination">
-          <!-- Pagination will be dynamically generated here -->
-        </ul>
-      </nav>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-3">
-      <p>
-        &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
-        reserved.
+  <section class="subhero text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Events</h1>
+      <p class="lead">
+        Music events are more than just performances; they are moments where
+        melodies become memories, strangers become friends, and the rhythm of
+        life beats in unison with every heart in the crowd.
       </p>
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          class="fab fa-facebook"
-        ></a>
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          class="fab fa-linkedin"
-        ></a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          class="fab fa-twitter"
-        ></a>
-      </div>
-    </footer>
-    <script>
-      document.getElementById("current-year").textContent =
-        new Date().getFullYear();
-    </script>
-    
-    <script type="module" src="scripts/events.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2>Events List</h2>
+    <input type="text" id="searchInput" class="form-control mb-4" placeholder="Search by title or description..." />
+
+    <div class="table-responsive">
+      <table class="table table-striped table-responsive table-hover text-lg">
+        <thead>
+          <tr>
+            <th class="p-3">Date</th>
+            <th class="p-3">Title</th>
+            <th class="p-3">Venue</th>
+            <th class="p-3">Details</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Dynamic table rows will be added here -->
+        </tbody>
+      </table>
+      <p id="noResultsMessage" class="text-center text-danger border border-danger" style="display: none">
+        No matching events found!
+      </p>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="pagination" id="pagination">
+        <!-- Pagination will be dynamically generated here -->
+      </ul>
+    </nav>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>
+      &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
+      reserved.
+    </p>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+  <script type="module" src="scripts/events.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

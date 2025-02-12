@@ -1,116 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Concert Night</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="subhero text-white text-center py-5">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <h1 class="display-4">Contact us</h1>
-        <p class="lead">
-            We're here to help—reach out and let's connect!
+        <a class="navbar-brand" href="index.html">Concert Night</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="subhero text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Contact us</h1>
+      <p class="lead">We're here to help—reach out and let's connect!</p>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 contact-info">
+        <h2>We are here:</h2>
+        <p><strong>Address:</strong> Rebæk Søpark 21, 2650 Hvidovre</p>
+        <p><strong>Service Area:</strong> Copenhagen, Denmark</p>
+        <p>
+          <strong>Phone:</strong>&nbsp;<a href="tel:+4571844067">+45 71 84 40 67</a>
+        </p>
+        <p>
+          <strong>Email:</strong>&nbsp;<a href="mailto:abc@gmail.com">abc@gmail.com</a>
         </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-md-8 contact-info">
-          <h2>We are here:</h2>
-          <p><strong>Address:</strong> Rebæk Søpark 21, 2650 Hvidovre</p>
-          <p><strong>Service Area:</strong> Copenhagen, Denmark</p>
-          <p><strong>Phone:</strong> +45 70 70 70 12</p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:abc@gmail.com">abc@gmail.com</a>
-          </p>
-        </div>
-      </div>
-    </section>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>
+      &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
+      reserved.
+    </p>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
+      <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+      <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>
-            &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
-            reserved.
-          </p>
-      <!-- Social Media Icons -->
-      <div class="social-icons">
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          class="fab fa-facebook"
-        ></a>
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          class="fab fa-linkedin"
-        ></a>
-        <a
-          href="https://twitter.com"
-          target="_blank"
-          class="fab fa-twitter"
-        ></a>
-      </div>
-    </footer>
-    <script>
-        document.getElementById("current-year").textContent =
-          new Date().getFullYear();
-      </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>

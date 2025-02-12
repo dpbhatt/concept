@@ -16,16 +16,19 @@ body {
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for clarity */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  /* Subtle shadow for clarity */
 }
 
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -40,20 +43,25 @@ section {
   background-image: url("images/subhero.png");
   background-size: cover;
   background-position: center;
-  height: 200px; /* Adjust this height to make the hero smaller */
+  height: 200px;
+  /* Adjust this height to make the hero smaller */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .subhero h1 {
-  font-size: 2.5rem; /* Customize the size of the heading */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for better visibility */
+  font-size: 2.5rem;
+  /* Customize the size of the heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Optional: Add shadow for better visibility */
 }
 
 .subhero p {
-  font-size: 1.25rem; /* Customize the size of the paragraph */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
+  font-size: 1.25rem;
+  /* Customize the size of the paragraph */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  /* Optional: Add shadow for better visibility */
 }
 
 /* Sub Hero Section Styles */
@@ -62,11 +70,13 @@ section {
   text-align: center;
   color: white;
 }
+
 .hero img {
   width: 100%;
   height: 500px;
   object-fit: cover;
 }
+
 .hero-text {
   position: absolute;
   top: 50%;
@@ -79,12 +89,14 @@ section {
 }
 
 .hero-text h2 {
-  font-size: 3rem; /* Increased font size */
+  font-size: 3rem;
+  /* Increased font size */
   font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 1.5rem; /* Adjusted font size */
+  font-size: 1.5rem;
+  /* Adjusted font size */
 }
 
 /* Styling for social media icons in footer */
@@ -94,9 +106,11 @@ section {
   margin: 0 10px;
   text-decoration: none;
 }
+
 .social-icons a:hover {
   color: #ddd;
 }
+
 .featured-events .card {
   margin-bottom: 20px;
 }
@@ -104,8 +118,9 @@ section {
 .contact-info {
   background: #020c16;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
+
 .contact-info h2 {
   margin-bottom: 20px;
 }
@@ -115,6 +130,7 @@ section {
   .subhero h1 {
     font-size: 2rem;
   }
+
   .subhero p {
     font-size: 1rem;
   }
