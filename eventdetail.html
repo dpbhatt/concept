@@ -1,192 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event details - Nepal Music Festival</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <style>
+      .event-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Event details</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
-  <link rel="manifest" href="favicon_io/site.webmanifest" />
-  <style>
-    .event-container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    /* Flexbox for Large Screens */
-    .event-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .gallery {
-      position: relative;
-      flex: 1;
-      /* Takes available space */
-      max-width: 70%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .event-image {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .event-details {
-      flex: 1;
-      /* Takes available space */
-      max-width: 30%;
-      text-align: left;
-    }
-
-    .event-details p {
-      margin-bottom: 10px;
-    }
-
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    .prev {
-      left: 10px;
-    }
-
-    .next {
-      right: 10px;
-    }
-
-    .event-description {
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
+      /* Flexbox for Large Screens */
       .event-header {
-        flex-direction: column;
-        align-items: flex-start;
-        /* Aligns everything to the left */
-        text-align: left;
-        /* Ensures text stays left-aligned */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .gallery {
+        position: relative;
+        flex: 1;
+        /* Takes available space */
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .event-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 10px;
       }
 
       .event-details {
-        max-width: 100%;
+        flex: 1;
+        /* Takes available space */
+        max-width: 30%;
+        text-align: left;
+      }
+
+      .event-details p {
+        margin-bottom: 10px;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .prev {
+        left: 10px;
+      }
+
+      .next {
+        right: 10px;
+      }
+
+      .event-description {
         margin-top: 20px;
         text-align: left;
-        /* Keeps text left-aligned */
       }
-    }
-  </style>
-</head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .event-header {
+          flex-direction: column;
+          align-items: flex-start;
+          /* Aligns everything to the left */
+          text-align: left;
+          /* Ensures text stays left-aligned */
+        }
+
+        .event-details {
+          max-width: 100%;
+          margin-top: 20px;
+          text-align: left;
+          /* Keeps text left-aligned */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Concert Night</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="subhero text-white text-center py-5">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Concert Night</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
-            </li>
-          </ul>
+        <h1 class="display-4">Event details</h1>
+        <p class="lead">
+          Exciting moments await—join us and be part of the experience!
+        </p>
+      </div>
+    </section>
+
+    <div class="container mt-2 event-container">
+      <h2 id="eventTitle" class="text-warning">Sample Event</h2>
+
+      <div class="event-header">
+        <!-- Image Gallery -->
+        <div class="gallery">
+          <button class="arrow prev" onclick="prevImage()">&#10094;</button>
+          <img id="eventImage" class="event-image" src="#" alt="Event Image" />
+          <button class="arrow next" onclick="nextImage()">&#10095;</button>
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+          <p>
+            <strong class="text-warning">Date:</strong> <span id="eventDate">March 10, 2025</span>
+          </p>
+          <p>
+            <strong class="text-warning">Venue:</strong>
+            <span id="eventLocation">New York City, NY</span>
+          </p>
+          <p>
+            <strong class="text-warning">Artists:</strong>
+            <span id="eventArtists">Artist 1, Artist 2</span>
+          </p>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <section class="subhero text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-4">Event details</h1>
-      <p class="lead">
-        Exciting moments await—join us and be part of the experience!
-      </p>
-    </div>
-  </section>
-
-  <div class="container mt-2 event-container">
-    <h2 id="eventTitle">Sample Event</h2>
-
-    <div class="event-header">
-      <!-- Image Gallery -->
-      <div class="gallery">
-        <button class="arrow prev" onclick="prevImage()">&#10094;</button>
-        <img id="eventImage" class="event-image" src="#" alt="Event Image">
-        <button class="arrow next" onclick="nextImage()">&#10095;</button>
+      <div class="event-description">
+        <h2 class="text-warning">Description</h2>
+        <p id="eventDetail">
+          This is a sample event detail description. It provides an overview of
+          the event, including its purpose, schedule, and key highlights.
+        </p>
       </div>
 
-      <!-- Event Details -->
-      <div class="event-details">
-        <p><strong>Date:</strong> <span id="eventDate">March 10, 2025</span></p>
-        <p><strong>Venue:</strong> <span id="eventLocation">New York City, NY</span></p>
-        <p><strong>Artists:</strong> <span id="eventArtists">Artist 1, Artist 2</span></p>
-      </div>
+      <a href="events.html" class="link-warning float-end">Back to Events</a>
     </div>
 
-    <div class="event-description">
-      <h2>Description</h2>
-      <p id="eventDetail">
-        This is a sample event detail description. It provides an overview of the event, including its purpose,
-        schedule, and key highlights.
+    <footer class="bg-dark text-white text-center py-3">
+      <p>
+        &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
+        reserved.
       </p>
-    </div>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="fab fa-facebook"
+        ></a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="fab fa-twitter"
+        ></a>
+      </div>
+    </footer>
 
-    <a href="events.html" class="link-warning float-end">Back to Events</a>
-  </div>
-
-  <footer class="bg-dark text-white text-center py-3">
-    <p>
-      &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
-      reserved.
-    </p>
-    <!-- Social Media Icons -->
-    <div class="social-icons">
-      <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
-      <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
-      <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("current-year").textContent =
-      new Date().getFullYear();
-  </script>
-
-  <script type="module" src="scripts/eventdetails.js"></script>
-  <script type="module" src="scripts/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script src="scripts/common.js"></script>
+    <script type="module" src="scripts/eventdetails.js"></script>
+    <script type="module" src="scripts/eventsmain.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

@@ -38,8 +38,6 @@ document.addEventListener("keydown", function (event)
   }
 });
 
-
-
 function getQueryParam(param)
 {
   const urlParams = new URLSearchParams(window.location.search);
@@ -66,13 +64,12 @@ function loadEventDetails()
     document.getElementById("eventDetail").textContent = event.description;
     document.getElementById("eventImage").src = event.images[0];
     images = event.images;
-    
+
     document.getElementById("eventImage").alt = event.title;
   } else
   {
-    document.getElementById("eventTitle").textContent = "Event Not Found";
+    document.getElementById("eventTitle").textContent = "Event Not Found!";
   }
 }
 
-// Run when page loads
 document.addEventListener("DOMContentLoaded", loadEventDetails);

@@ -1,12 +1,13 @@
 export const data = [
   {
     id: 1,
-    title: "Event 1",
+    title: "Happy new year year 2024",
     eventdate: "March 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
@@ -15,12 +16,13 @@ export const data = [
   },
   {
     id: 2,
-    title: "Event 2",
+    title: "Happy Dashain 2024",
     eventdate: "March 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "City Concert Hall, LA",
     artists: ["Band X", "Singer Y"],
@@ -29,12 +31,13 @@ export const data = [
   },
   {
     id: 3,
-    title: "Event 3",
+    title: "Happy Tihar 2024",
     eventdate: "March 15, 2022",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
@@ -43,12 +46,13 @@ export const data = [
   },
   {
     id: 4,
-    title: "Event 4",
+    title: "Merry Christmas 2020",
     eventdate: "March 15, 2020",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
@@ -57,12 +61,13 @@ export const data = [
   },
   {
     id: 5,
-    title: "Event 5",
+    title: "National Day 2024",
     eventdate: "February 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
@@ -71,12 +76,13 @@ export const data = [
   },
   {
     id: 6,
-    title: "Event 6",
+    title: "Happy Birthday 2013",
     eventdate: "March 15, 2013",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
@@ -85,12 +91,13 @@ export const data = [
   },
   {
     id: 7,
-    title: "Event 7",
+    title: "Anniversary 2024",
     eventdate: "March 10, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
@@ -99,44 +106,47 @@ export const data = [
   },
   {
     id: 8,
-    title: "Event 8",
+    title: "Anniversary 2020",
     eventdate: "April 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
     id: 9,
-    title: "Event 9",
+    title: "Concert 2024",
     eventdate: "May 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "City Concert Hall, LA",
     artists: ["Band X", "Singer Y"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
     id: 10,
-    title: "Event 10",
+    title: "New Year 2024",
     eventdate: "June 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -145,12 +155,13 @@ export const data = [
     eventdate: "July 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -159,12 +170,13 @@ export const data = [
     eventdate: "August 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -173,12 +185,13 @@ export const data = [
     eventdate: "September 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "City Concert Hall, LA",
     artists: ["Band X", "Singer Y"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -187,12 +200,13 @@ export const data = [
     eventdate: "October 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -201,12 +215,13 @@ export const data = [
     eventdate: "November 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -215,12 +230,13 @@ export const data = [
     eventdate: "December 15, 2024",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -229,12 +245,13 @@ export const data = [
     eventdate: "January 15, 2023",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "City Concert Hall, LA",
     artists: ["Band X", "Singer Y"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -243,12 +260,13 @@ export const data = [
     eventdate: "February 15, 2023",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -257,12 +275,13 @@ export const data = [
     eventdate: "March 20, 2023",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -271,17 +290,18 @@ export const data = [
     eventdate: "March 15, 2016",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Grand Arena, NY",
     artists: ["Artist A", "Artist B", "Artist C"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
     id: 21,
-    title: "Event 21",
+    title: "Rangin shaja 2015",
     eventdate: "June 15, 2019",
     images: [
       "images/Asmita-Adhikari.jpg",
@@ -300,12 +320,13 @@ export const data = [
     eventdate: "March 15, 2018",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "City Concert Hall, LA",
     artists: ["Band X", "Singer Y"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -314,12 +335,13 @@ export const data = [
     eventdate: "March 15, 2017",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Open Air Park, SF",
     artists: ["DJ Alpha", "Rapstar Z"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt libero id felis dapibus, sed tincidunt elit venenatis. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   },
   {
@@ -328,12 +350,13 @@ export const data = [
     eventdate: "March 15, 2016",
     images: [
       "images/Asmita-Adhikari.jpg",
-      "https://images.placeholders.dev/?width=400&height=400",
-      "https://images.placeholders.dev/?width=450&height=450",
+      "images/Rachana_Rimal.png",
+      "images/Pramod_kharel.png",
+      "images/Samir-Shrestha-scaled.jpg"
     ],
     venue: "Sunset Pavilion, Miami",
     artists: ["Rock Band L", "Guitarist Q"],
-    isFeatured: true,
+    isFeatured: false,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Proin a nulla nec elit aliquet venenatis a sit amet nulla. Nullam euismod, lorem eu tincidunt vestibulum, magna ex rhoncus dolor, id bibendum nunc justo eget urna. Sed dictum vestibulum nulla, a eleifend urna tincidunt vel. Duis ultricies metus sit amet sem sagittis, at aliquam magna hendrerit. Morbi malesuada arcu non libero accumsan, a feugiat risus lacinia. Curabitur convallis lacus ut turpis efficitur, at elementum velit venenatis. Nam euismod, felis in suscipit hendrerit, justo tortor sollicitudin odio, ut fermentum mi urna eu libero. Nulla facilisi. Donec efficitur feugiat erat, eget facilisis lorem maximus vel."
   }
 ];

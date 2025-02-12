@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Concert Event</title>
+  <title>Home page - Nepal Music Festival</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Add Font Awesome CDN for social media icons -->
@@ -56,7 +56,7 @@
 
   <section class="content py-5">
     <div class="container">
-      <h2>Welcome to Concert Night</h2>
+      <h2 class="text-warning">Welcome to Concert Night</h2>
 
       <p>
         <strong>Music</strong> is a universal language that transcends
@@ -94,80 +94,11 @@
     <div class="container">
       <h2 class="text-center mb-4">Featured Events</h2>
       <div class="row" id="featured-events">
-        <script>
-          const events = [
-            {
-              title: "Rock Night",
-              date: "March 15, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Jazz Evening",
-              date: "April 10, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Pop Extravaganza",
-              date: "May 5, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Blues Vibes",
-              date: "June 20, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "EDM Festival",
-              date: "July 8, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Classical Nights",
-              date: "August 12, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Metal Mayhem",
-              date: "September 25, 2025",
-              img: "images/Asmita-Adhikari.jpg",
-            },
-            {
-              title: "Country Tunes",
-              date: "October 18, 2025",
-              img: "https://images.placeholders.dev/?width=300&height=300",
-            },
-          ];
-
-          function loadEvents(count)
-          {
-            const container = document.getElementById("featured-events");
-            container.innerHTML = "";
-            for (let i = 0; i < count; i++)
-            {
-              if (events[i])
-              {
-                container.innerHTML += `
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="${events[i].img}" class="card-img-top" alt="Event Image">
-                                            <div class="card-body text-center">
-                                                <h5 class="card-title">${events[i].title}</h5>
-                                                <p class="card-text">${events[i].date}</p>
-                                                <p class="card-text">Valby Culture House</p>
-                                                <a class="float-end" href="eventdetail.html" class="link-info">View details</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                `;
-              }
-            }
-          }
-          loadEvents(6);
-        </script>
+      
       </div>
-      <div class="text-center mt-3">
+      <div class="text-center float-end mt-0">
         <button id="show-more-events" class="btn btn-primary">
-          Show More
+          Show more
         </button>
       </div>
     </div>
@@ -185,20 +116,10 @@
       <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
     </div>
   </footer>
-  <script>
-    document.getElementById("current-year").textContent =
-      new Date().getFullYear();
-  </script>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document
-      .getElementById("show-more-events")
-      .addEventListener("click", function ()
-      {
-        loadEvents(events.length);
-        this.style.display = "none";
-      });
-  </script>
+ 
+  <script src="scripts/common.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
-
 </html>
