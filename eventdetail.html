@@ -54,8 +54,8 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
                     </ul>
                 </div>
@@ -65,8 +65,8 @@
 
     <section class="subhero text-white text-center py-5">
         <div class="container">
-            <h1 class="display-4">Upcoming Events</h1>
-            <p class="lead">Join us for an unforgettable experience with music and celebration!</p>
+            <h1 class="display-4">Event details</h1>
+            <p class="lead">Exciting moments await—join us and be part of the experience!</p>
         </div>
     </section>
     
@@ -84,14 +84,21 @@
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Concert Event. All rights reserved.</p>
+        <p>
+            &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
+            reserved.
+          </p>
+        <!-- Social Media Icons -->
         <div class="social-icons">
             <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
             <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
             <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
         </div>
     </footer>
-    
+    <script>
+        document.getElementById("current-year").textContent =
+          new Date().getFullYear();
+      </script>
     <script>
         const images = [
             "https://images.placeholders.dev/?width=300&height=300",

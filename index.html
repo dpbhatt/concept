@@ -1,232 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concert Event</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <!-- Add Font Awesome CDN for social media icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-         .hero {
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-    .hero img {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
-    }
-    .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 80%;
-    }
-    .hero-text h2 {
-        font-size: 3rem;  /* Increased font size */
-        font-weight: bold;
-    }
-    .hero-text p {
-        font-size: 1.5rem;  /* Adjusted font size */
-    }
-        /* Styling for social media icons in footer */
-        .social-icons a {
-            color: white;
-            font-size: 1.5rem;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #ddd;
-        }
-                .featured-events .card {
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
-<body>
-       <header class="bg-dark text-white py-3">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="index.html">Concert Night</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-dark text-white py-3">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">Concert Night</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
-    
-<section class="hero">
-    <img src="images/hero.jpg" alt="Live Concert" />
-    <div class="hero-text">
+
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Live Concert" />
+      <div class="hero-text">
         <h2>"Music is the universal language of mankind."</h2>
-        <p>Experience the thrill of live performances and unforgettable moments.</p>
-    </div>
-</section>
-    
-    <section class="content py-5">
-        <div class="container">
-            <h2>Welcome to Concert Night</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod orci et urna fermentum, in aliquam ante consequat. Praesent aliquam convallis magna, non dictum nulla dapibus non. Etiam nec ipsum nec velit iaculis volutpat. Ut malesuada, risus non euismod pretium, nisi magna convallis risus, id varius augue purus at arcu. Sed ut venenatis arcu. Integer at purus ac enim scelerisque laoreet sit amet a nunc. Sed euismod mollis lorem, in vestibulum velit vehicula nec. Integer quis mi est. Nunc suscipit orci at arcu fermentum, sed dignissim dui lacinia.</p>
-        <p>Nulla gravida, nulla nec faucibus dictum, turpis velit lobortis libero, a auctor magna risus nec leo. Integer at est ac eros auctor convallis. Curabitur a magna eu mi iaculis suscipit. Etiam vitae orci ac nisi maximus posuere. Suspendisse potenti. Phasellus auctor lacinia ante, ac dignissim purus euismod ac. Ut sit amet dolor nulla. Nam et eros a neque cursus suscipit a at quam.</p>
-    
-        </div>
+        <p>
+          Experience the thrill of live performances and unforgettable moments.
+        </p>
+      </div>
     </section>
-    
-     <section class="featured-events py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Featured Events</h2>
-            <div class="row" id="featured-events">
-                <script>
-                    const events = [
-                        {title: "Rock Night", date: "March 15, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Jazz Evening", date: "April 10, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Pop Extravaganza", date: "May 5, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Blues Vibes", date: "June 20, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "EDM Festival", date: "July 8, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Classical Nights", date: "August 12, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Metal Mayhem", date: "September 25, 2025", img: "https://images.placeholders.dev/?width=300&height=300"},
-                        {title: "Country Tunes", date: "October 18, 2025", img: "https://images.placeholders.dev/?width=300&height=300"}
-                    ];
-                    
-                    function loadEvents(count) {
-                        const container = document.getElementById('featured-events');
-                        container.innerHTML = "";
-                        for (let i = 0; i < count; i++) {
-                            if (events[i]) {
-                                container.innerHTML += `
+
+    <section class="content py-5">
+      <div class="container">
+        <h2>Welcome to Concert Night</h2>
+        
+        <p>
+          <strong>Music</strong> is a universal language that transcends boundaries, bringing
+          people together through rhythm, melody, and harmony. Whether it's a
+          symphony echoing through a grand concert hall or a local band
+          performing on a street corner, music has the power to evoke deep
+          emotions and create lasting memories. It's an art form that captures
+          the essence of human expression, offering solace during difficult
+          times and celebration during joyous moments. From classical
+          compositions to modern genres, music connects us in ways words cannot.
+          It reflects the diversity of cultures while uniting us in shared
+          experiences, whether we're dancing at a festival, enjoying a live
+          performance, or listening to our favorite song alone. Music is not
+          just entertainment—it’s an integral part of the human experience that
+          inspires creativity and sparks conversations across generations.
+        </p>
+        <p>
+          <strong>Events</strong> are more than just gatherings—they are opportunities for
+          connection, learning, and celebration. From small, intimate
+          get-togethers to large-scale conferences and festivals, each event
+          holds the potential to bring people together, create new experiences,
+          and leave lasting impressions. The power of events lies in their
+          ability to foster a sense of community, providing a platform for
+          individuals to share their passions, ideas, and talents. Whether it’s
+          a music festival that brings fans from all over the world or a local
+          seminar that sparks innovation, events serve as the backdrop for
+          personal and professional growth. They are moments that allow us to
+          step out of our routines and immerse ourselves in something special,
+          making memories that will last long after the event has ended.
+        </p>
+      </div>
+    </section>
+
+    <section class="featured-events py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Events</h2>
+        <div class="row" id="featured-events">
+          <script>
+            const events = [
+              {
+                title: "Rock Night",
+                date: "March 15, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Jazz Evening",
+                date: "April 10, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Pop Extravaganza",
+                date: "May 5, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Blues Vibes",
+                date: "June 20, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "EDM Festival",
+                date: "July 8, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Classical Nights",
+                date: "August 12, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Metal Mayhem",
+                date: "September 25, 2025",
+                img: "/images/Asmita-Adhikari.jpg",
+              },
+              {
+                title: "Country Tunes",
+                date: "October 18, 2025",
+                img: "https://images.placeholders.dev/?width=300&height=300",
+              },
+            ];
+
+            function loadEvents(count) {
+              const container = document.getElementById("featured-events");
+              container.innerHTML = "";
+              for (let i = 0; i < count; i++) {
+                if (events[i]) {
+                  container.innerHTML += `
                                     <div class="col-md-4">
                                         <div class="card">
                                             <img src="${events[i].img}" class="card-img-top" alt="Event Image">
                                             <div class="card-body text-center">
                                                 <h5 class="card-title">${events[i].title}</h5>
                                                 <p class="card-text">${events[i].date}</p>
-                                                <a href="eventdetail.html" class="btn btn-primary">Show More</a>
+                                                <p class="card-text">Valby Culture House</p>
+                                                <a class="float-end" href="eventdetail.html" class="link-info">View details</a>
                                             </div>
                                         </div>
                                     </div>
                                 `;
-                            }
-                        }
-                    }
-                    loadEvents(6);
-                </script>
-            </div>
-            <div class="text-center mt-3">
-                <button id="show-more-events" class="btn btn-secondary">Show More</button>
-            </div>
+                }
+              }
+            }
+            loadEvents(6);
+          </script>
         </div>
+        <div class="text-center mt-3">
+          <button id="show-more-events" class="btn btn-primary">
+            Show More
+          </button>
+        </div>
+      </div>
     </section>
-    
+
     <section class="events text-center py-5">
-        <div class="container">
-            <h2>Past Events</h2>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Country</th>
-                        <th>Band</th>
-                        <th>Location</th>
-                        <th>Details</th>
-                    </tr>
-                </thead>
-                <tbody id="event-list">
-                    <tr>
-                        <td>26 April 2024</td>
-                        <td>Denmark</td>
-                        <td>The AXE Band</td>
-                        <td>Copenhagen</td>
-                        <td><a href="#">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>15 May 2024</td>
-                        <td>Germany</td>
-                        <td>Rock Masters</td>
-                        <td>Berlin</td>
-                        <td><a href="#">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>05 June 2024</td>
-                        <td>USA</td>
-                        <td>Jazz Nights</td>
-                        <td>New York</td>
-                        <td><a href="#">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>20 July 2024</td>
-                        <td>UK</td>
-                        <td>Pop Stars Live</td>
-                        <td>London</td>
-                        <td><a href="#">Details</a></td>
-                    </tr>
-                    <tr>
-                        <td>10 August 2024</td>
-                        <td>France</td>
-                        <td>Electro Beats</td>
-                        <td>Paris</td>
-                        <td><a href="#">Details</a></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button id="show-more" class="btn btn-secondary mt-3">Show more events</button>
-        </div>
+      <div class="container">
+        <h2>Past Events</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Country</th>
+              <th>Band</th>
+              <th>Location</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody id="event-list">
+            <tr>
+              <td>26 April 2024</td>
+              <td>Denmark</td>
+              <td>The AXE Band</td>
+              <td>Copenhagen</td>
+              <td><a href="#">Details</a></td>
+            </tr>
+            <tr>
+              <td>15 May 2024</td>
+              <td>Germany</td>
+              <td>Rock Masters</td>
+              <td>Berlin</td>
+              <td><a href="#">Details</a></td>
+            </tr>
+            <tr>
+              <td>05 June 2024</td>
+              <td>USA</td>
+              <td>Jazz Nights</td>
+              <td>New York</td>
+              <td><a href="#">Details</a></td>
+            </tr>
+            <tr>
+              <td>20 July 2024</td>
+              <td>UK</td>
+              <td>Pop Stars Live</td>
+              <td>London</td>
+              <td><a href="#">Details</a></td>
+            </tr>
+            <tr>
+              <td>10 August 2024</td>
+              <td>France</td>
+              <td>Electro Beats</td>
+              <td>Paris</td>
+              <td><a href="#">Details</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="show-more" class="btn btn-secondary mt-3">
+          Show more events
+        </button>
+      </div>
     </section>
-    
+
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Concert Event. All rights reserved.</p>
-        <!-- Social Media Icons -->
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook"></a>
-            <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
-        </div>
+        <p>
+            &copy; 2013 - <span id="current-year"></span> Concert Event. All rights
+            reserved.
+          </p>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="fab fa-facebook"
+        ></a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="fab fa-linkedin"
+        ></a>
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          class="fab fa-twitter"
+        ></a>
+      </div>
     </footer>
-    
+    <script>
+        document.getElementById("current-year").textContent =
+          new Date().getFullYear();
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.getElementById('show-more').addEventListener('click', function() {
-            const moreEvents = [
-                ["25 September 2024", "Spain", "Latin Groove", "Madrid", "Details"],
-                ["30 October 2024", "Italy", "Opera Nights", "Rome", "Details"],
-                ["15 November 2024", "Canada", "Indie Vibes", "Toronto", "Details"],
-                ["01 December 2024", "Australia", "Rock Revolution", "Sydney", "Details"],
-                ["10 January 2025", "Japan", "Tokyo Beats", "Tokyo", "Details"],
-                ["20 February 2025", "Brazil", "Samba Rhythms", "Rio de Janeiro", "Details"],
-                ["15 March 2025", "Netherlands", "EDM Festival", "Amsterdam", "Details"],
-                ["05 April 2025", "Sweden", "Nordic Tunes", "Stockholm", "Details"],
-                ["25 May 2025", "Mexico", "Fiesta Music", "Mexico City", "Details"],
-                ["10 June 2025", "Russia", "Classical Evenings", "Moscow", "Details"]
-            ];
-            
-            const eventList = document.getElementById('event-list');
-            moreEvents.forEach(event => {
-                const tr = document.createElement('tr');
-                tr.innerHTML = `<td>${event[0]}</td><td>${event[1]}</td><td>${event[2]}</td><td>${event[3]}</td><td><a href="#">${event[4]}</a></td>`;
-                eventList.appendChild(tr);
-            });
-            this.style.display = 'none';
+      document
+        .getElementById("show-more")
+        .addEventListener("click", function () {
+          const moreEvents = [
+            ["25 September 2024", "Spain", "Latin Groove", "Madrid", "Details"],
+            ["30 October 2024", "Italy", "Opera Nights", "Rome", "Details"],
+            ["15 November 2024", "Canada", "Indie Vibes", "Toronto", "Details"],
+            [
+              "01 December 2024",
+              "Australia",
+              "Rock Revolution",
+              "Sydney",
+              "Details",
+            ],
+            ["10 January 2025", "Japan", "Tokyo Beats", "Tokyo", "Details"],
+            [
+              "20 February 2025",
+              "Brazil",
+              "Samba Rhythms",
+              "Rio de Janeiro",
+              "Details",
+            ],
+            [
+              "15 March 2025",
+              "Netherlands",
+              "EDM Festival",
+              "Amsterdam",
+              "Details",
+            ],
+            ["05 April 2025", "Sweden", "Nordic Tunes", "Stockholm", "Details"],
+            ["25 May 2025", "Mexico", "Fiesta Music", "Mexico City", "Details"],
+            [
+              "10 June 2025",
+              "Russia",
+              "Classical Evenings",
+              "Moscow",
+              "Details",
+            ],
+          ];
+
+          const eventList = document.getElementById("event-list");
+          moreEvents.forEach((event) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `<td>${event[0]}</td><td>${event[1]}</td><td>${event[2]}</td><td>${event[3]}</td><td><a href="#">${event[4]}</a></td>`;
+            eventList.appendChild(tr);
+          });
+          this.style.display = "none";
         });
-        loadEvents(6);
-         document.getElementById('show-more-events').addEventListener('click', function() {
-            loadEvents(events.length);
-            this.style.display = 'none';
+      loadEvents(6);
+      document
+        .getElementById("show-more-events")
+        .addEventListener("click", function () {
+          loadEvents(events.length);
+          this.style.display = "none";
         });
     </script>
-</body>
+  </body>
 </html>
