@@ -4,33 +4,16 @@ body {
   margin: 0;
 }
 
-body {
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background: #0170B9;
   display: flex;
   flex-direction: column;
-}
-
-body {
-  background: linear-gradient(270deg, #212121, #0170B9, #150262);
-  background-size: 400% 400%;
-  animation: gradientBG 120s ease infinite;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 section {
@@ -50,17 +33,13 @@ section {
 }
 
 .subhero h1 {
-  font-size: 2.5rem;
-  /* Customize the size of the heading */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  /* Optional: Add shadow for better visibility */
+  font-size: 2.5rem;  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
 }
 
 .subhero p {
-  font-size: 1.25rem;
-  /* Customize the size of the paragraph */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  /* Optional: Add shadow for better visibility */
+  font-size: 1.5rem; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  
 }
 
 /* Sub Hero Section Styles */
@@ -81,21 +60,19 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.1);
+  /* background: rgba(0, 0, 0, 0.1); */
   padding: 20px;
   border-radius: 10px;
   max-width: 80%;
 }
 
 .hero-text h2 {
-  font-size: 3rem;
-  /* Increased font size */
+  font-size: 3rem;  
   font-weight: bold;
 }
 
 .hero-text p {
-  font-size: 1.5rem;
-  /* Adjusted font size */
+  font-size: 1.5rem;  
 }
 
 /* Styling for social media icons in footer */
@@ -134,12 +111,6 @@ section {
     font-size: 1rem;
   }
 }
-
-
-.text-justify {
-  text-align: justify;
-}
-
 
 .pagination .page-item.active .page-link {
   background-color: #007bff !important;
