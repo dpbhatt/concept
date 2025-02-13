@@ -168,3 +168,11 @@ section {
     color: #333;
   }
 }
+
+
+/* Highlight the active nav link */
+.navbar-nav .nav-link.active {
+  font-weight: 700; /* Make it bold */
+  color: #f8d210 !important; /* Change text color */
+  border-bottom: 2px solid #f8d210; /* Add an underline */
+}
