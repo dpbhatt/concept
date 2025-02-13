@@ -139,3 +139,61 @@ section {
 .text-justify {
   text-align: justify;
 }
+
+
+.pagination .page-item.active .page-link {
+  background-color: #007bff !important;
+  /* Blue background for active page */
+  color: white !important;
+  /* White text */
+  border-color: #007bff !important;
+}
+
+.pagination .page-item .page-link {
+  color: #007bff;
+  /* Default page link color */
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .table-container table {
+    display: block;
+    width: 100%;
+  }
+
+  .table-container thead {
+    display: none;
+    /* Hide headers on small screens */
+  }
+
+  .table-container tbody,
+  .table-container tr,
+  .table-container td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-container tr {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .table-container td {
+    text-align: left;
+    padding: 10px;
+    position: relative;
+  }
+
+  .table-container td::before {
+    content: attr(data-label);
+    /* Use data attributes as labels */
+    font-weight: bold;
+    display: block;
+    color: #333;
+  }
+}
