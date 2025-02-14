@@ -68,11 +68,14 @@ section {
 
 .hero-text h2 {
   font-size: 3rem;  
-  font-weight: bold;
+  font-weight: bold;  
+  color:rgb(255, 193, 7) 
 }
 
 .hero-text p {
   font-size: 1.5rem;  
+  font-weight: 700;
+  color:rgb(255, 193, 7) 
 }
 
 /* Media queries for smaller screens */
@@ -206,4 +209,9 @@ section {
   font-weight: 700; /* Make it bold */
   color: #f8d210 !important; /* Change text color */
   border-bottom: 2px solid #f8d210; /* Add an underline */
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust as needed */
+  width: auto;
 }
