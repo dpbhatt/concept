@@ -69,13 +69,12 @@ section {
 .hero-text h2 {
   font-size: 3rem;  
   font-weight: bold;  
-  color:rgb(255, 193, 7) 
+  
 }
 
 .hero-text p {
   font-size: 1.5rem;  
-  font-weight: 700;
-  color:rgb(255, 193, 7) 
+  font-weight: 900;  
 }
 
 /* Media queries for smaller screens */
