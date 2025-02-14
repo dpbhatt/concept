@@ -214,3 +214,22 @@ section {
   height: 50px; /* Adjust as needed */
   width: auto;
 }
+
+.media-partner {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.media-partner h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.media-partner-img {
+  width: 150px;  /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circular space */
+  border: 3px solid #ffc107; /* Optional: Adds a border with a warning color */
+}
