@@ -233,3 +233,88 @@ section {
   object-fit: cover; /* Ensures the image fills the circular space */
   border: 3px solid #ffc107; /* Optional: Adds a border with a warning color */
 }
+
+
+
+.event-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Flexbox for Large Screens */
+.event-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gallery {
+  position: relative;
+  flex: 1;
+  /* Takes available space */
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.event-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.event-details {
+  flex: 1;
+  /* Takes available space */
+  max-width: 30%;
+  text-align: left;
+}
+
+.event-details p {
+  margin-bottom: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.event-description {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+    /* Aligns everything to the left */
+    text-align: left;
+    /* Ensures text stays left-aligned */
+  }
+
+  .event-details {
+    max-width: 100%;
+    margin-top: 20px;
+    text-align: left;
+    /* Keeps text left-aligned */
+  }
+}
