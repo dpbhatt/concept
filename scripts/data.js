@@ -191,7 +191,7 @@ export const data = [
   {
     id: 13,
     title: "NMF Jamming",
-    eventdate: "Various dates",
+    eventdate: "May - June - July - Nov (2017), Feb - March - June - July - Sept - Dec (2018), Feb - June - August (2019), Oct (2024)",
     images: [
       "images/13/1.jpg",
       "images/13/2.jpg",
@@ -205,7 +205,7 @@ export const data = [
       "images/13/10.jpg",
       "images/13/11.jpg"
     ],
-    venue: "Various places",
+    venue: "Pool Pub and Valbykulturhus",
     artists: ["Local artists"],
     isFeatured: false,
     description: "Nmf Jamming is a stepstone project/event that is arranged to promote local Nepalese musicians and singers. It is a free stage where every interested individual can come to the stage and show their talent and jam with the audience who come to entertain and quick refreshment from their busy life. It is a free entrance event where we Nmf sell food and drink and cover partial organization expenses and investment for our upcoming events and projects. The event was held every month however due to operational management issues, it is now held about 3 to 4 times a year."
