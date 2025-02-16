@@ -61,9 +61,8 @@ document.addEventListener("DOMContentLoaded", function ()
       <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2013 - <span id="current-year"></span> Nepal Music Festival Denmark. CVR: 34777306. All rights reserved.</p>
         <div class="social-icons">
-          <a href="https://www.facebook.com/nmfdenmark" target="_blank" class="fab fa-facebook"></a>
-          <a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
-          <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+          <a href="https://www.facebook.com/nmfdenmark" target="_blank" class="fab fa-facebook"></a>          
+          <a href="https://www.instagram.com/nmfdenmark?igsh=Z2xmZDVjdmlhaDBr&utm_source=qr" target="_blank" class="fab fa-instagram"></a>
         </div>
       </footer>
     `;

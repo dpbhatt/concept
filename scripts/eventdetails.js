@@ -1,6 +1,11 @@
 import { data } from './data.js';
 
-let images = [];
+let images = [
+  "https://images.placeholders.dev/?width=600&height=600",
+  "https://images.placeholders.dev/?width=400&height=400",
+  "https://images.placeholders.dev/?width=450&height=450",
+];
+
 let currentIndex = 0;
 
 function showImage(index) {
@@ -17,7 +22,6 @@ export function nextImage() {
   showImage(currentIndex);
 }
 
-// Keyboard navigation for image gallery
 document.addEventListener("keydown", function (event) {
   if (event.key === "ArrowLeft") {
     prevImage();
@@ -29,6 +33,51 @@ document.addEventListener("keydown", function (event) {
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(param);
+}
+
+// Function to create iframe for Facebook videos (Watch & Reels)
+function createFacebookIframe(videoUrl) {
+  let videoId;
+
+  // Check if URL is a Facebook Watch video
+  if (videoUrl.includes("facebook.com/watch")) {
+    const match = videoUrl.match(/v=(\d+)/);
+    if (match) videoId = match[1];
+  }
+  // Check if URL is a Facebook Reel
+  else if (videoUrl.includes("facebook.com/reel/")) {
+    const match = videoUrl.match(/\/reel\/(\d+)/);
+    if (match) videoId = match[1];
+  }
+
+  if (!videoId) return null;
+
+  return `<iframe 
+            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/video.php?v=${videoId}&show_text=false"
+            width="100%" height="315" 
+            style="border:none;overflow:hidden; max-width: 560px;" 
+            scrolling="no" frameborder="0" allowfullscreen="true">
+          </iframe>`;
+}
+
+// Load all videos from event data
+function loadEventVideos(event) {
+  const videoContainer = document.getElementById("eventVideoContainer");
+  videoContainer.innerHTML = ""; // Clear existing videos
+
+  if (!event.videos || event.videos.length === 0) return;
+
+  event.videos.forEach(videoUrl => {
+    const iframeHtml = createFacebookIframe(videoUrl);
+    if (iframeHtml) {
+      const div = document.createElement("div");
+      div.classList.add("video-wrapper");
+      div.innerHTML = iframeHtml;
+      videoContainer.appendChild(div);
+    }
+  });
+
+  videoContainer.style.display = "block"; // Show video section
 }
 
 function loadEventDetails() {
@@ -46,42 +95,12 @@ function loadEventDetails() {
     document.getElementById("eventLocation").textContent = event.venue;
     document.getElementById("eventArtists").textContent = event.artists.join(", ");
     document.getElementById("eventDetail").textContent = event.description;
-    
-    // Load event images
-    if (event.images && event.images.length > 0) {
-      images = event.images;
-      document.getElementById("eventImage").src = images[0];
-      document.getElementById("eventImage").alt = event.title;
-    } else {
-      document.getElementById("eventImage").src = "https://via.placeholder.com/500x300?text=No+Image";
-    }
+    document.getElementById("eventImage").src = event.images[0];
+    images = event.images;
+    document.getElementById("eventImage").alt = event.title;
 
-    // Load event videos
-    const videoContainer = document.getElementById("eventVideoContainer");
-    videoContainer.innerHTML = ""; // Clear previous content
-
-    if (event.videos && event.videos.length > 0) {
-      videoContainer.style.display = "block"; // Show video section
-
-      event.videos.forEach(videoUrl => {
-        const iframe = document.createElement("iframe");
-        iframe.src = videoUrl.replace("facebook.com/reel/", "facebook.com/plugins/video.php?href=https://www.facebook.com/reel/");
-        iframe.width = "68%";
-        iframe.height = "350";
-        iframe.style.border = "none";
-        iframe.style.overflow = "hidden";
-        iframe.allow = "autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share";
-        iframe.allowFullscreen = true;
-
-        const videoWrapper = document.createElement("div");
-        videoWrapper.classList.add("video-wrapper");
-        videoWrapper.appendChild(iframe);
-
-        videoContainer.appendChild(videoWrapper);
-      });
-    } else {
-      videoContainer.style.display = "none"; // Hide if no videos available
-    }
+    // Load Videos
+    loadEventVideos(event);
   } else {
     document.getElementById("eventTitle").textContent = "Event Not Found!";
   }

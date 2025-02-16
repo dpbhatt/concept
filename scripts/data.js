@@ -27,7 +27,7 @@ export const data = [
       "images/11/2.jpg",
       "images/11/3.jpg"
     ],
-    videos: [],
+    videos: ["https://www.facebook.com/watch/?mibextid=wwXIfr&v=1591335645041353&rdid=tCBx9732ZPZGYoay"],
     venue: "Kulturhus Risbjerggaard - Hvidovrevej 241, 2650 Hvidovre",
     artists: ["Cobweb (band)"],
     isFeatured: true,
