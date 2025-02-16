@@ -27,10 +27,10 @@ function loadEvents(count)
                               <div class="card">
                                   <img src="${featuredEvents[i].images[0]}" class="card-img-top" alt="Event Image">
                                   <div class="card-body text-center">
-                                      <h5 class="card-title">${featuredEvents[i].title}</h5>
-                                      <p class="card-text">${featuredEvents[i].eventdate}</p>
-                                      <p class="card-text">${featuredEvents[i].venue}</p>
-                                      <a class="float-end" href="eventdetail.html?id=${featuredEvents[i].id}" class="link-info">Details</a>
+                                      <p class="card-title fs-5">${featuredEvents[i].title}</p>
+                                      <p class="card-text fs-6">${featuredEvents[i].eventdate}</p>
+                                      <p class="card-text fs-6">${featuredEvents[i].venue}</p>
+                                      <a class="float-end fs-6" href="eventdetail.html?id=${featuredEvents[i].id}" class="link-info">Details</a>
                                   </div>
                               </div>
                           </div>

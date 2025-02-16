@@ -121,8 +121,24 @@ section {
 }
 
 .featured-events .card {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures uniform height */
 }
+
+.featured-events .card-img-top {
+  width: 100%;
+  height: 60%; /* Set a fixed height for images */
+  object-fit: cover; /* Ensures images are cropped properly */
+}
+
+.featured-events .card-body {
+  flex-grow:1; /* Expands to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
 
 .contact-info {
   background: #020c16;
