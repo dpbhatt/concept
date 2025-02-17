@@ -195,7 +195,7 @@ export const data = [
       "images/1/3.jpg"
     ],
     videos: [],
-    venue: "Vega Copenhagen - Enghavevej 40, 1674 København",
+    venue: "Kulturhuset Islands Brygge - Islands Brygge 18, 2300 København",
     artists: ["Local Danish artists", "Nepalese bands"],
     isFeatured: true,
     description: "Local Danish and Nepalese bands performing in Copenhagen to Kathmandu 2013 was a historic event in launching our Copenhagen to Kathmandu event at its early stage. It was our very first initiation to lunch Copenhagen To Kathmandu where the overwhelming support and your participation motivated us to move on until today."
