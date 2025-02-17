@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function ()
+{
   const headerHTML = `
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,30 +37,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function ()
 {
-    // Get current page URL
-    const currentPage = window.location.pathname.split("/").pop();
+  // Get current page URL
+  const currentPage = window.location.pathname.split("/").pop();
 
-    // Select all nav links
-    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  // Select all nav links
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    // Loop through each link and check if it matches the current page
-    navLinks.forEach(link =>
+  // Loop through each link and check if it matches the current page
+  navLinks.forEach(link =>
+  {
+    if (link.getAttribute("href") === currentPage)
     {
-        if (link.getAttribute("href") === currentPage)
-        {
-            link.classList.add("active");
-        } else
-        {
-            link.classList.remove("active");
-        }
-    });
+      link.classList.add("active");
+    } else
+    {
+      link.classList.remove("active");
+    }
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function ()
 {
-    document.getElementById("footer-placeholder").innerHTML = `
+  document.getElementById("footer-placeholder").innerHTML = `
       <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2013 - <span id="current-year"></span> Nepal Music Festival Denmark. CVR: 34777306. All rights reserved.</p>
+        <p>&copy; 2013 - <span id="current-year"></span> Nepal Music Festival Denmark. CVR: 34777306. All rights reserved. Developed by <a href="https://www.linkedin.com/in/dpbhatt" target="_blank">DP Bhatt</a></p>
         <div class="social-icons">
           <a href="https://www.facebook.com/nmfdenmark" target="_blank" class="fab fa-facebook"></a>          
           <a href="https://www.instagram.com/nmfdenmark?igsh=Z2xmZDVjdmlhaDBr&utm_source=qr" target="_blank" class="fab fa-instagram"></a>
@@ -67,5 +68,5 @@ document.addEventListener("DOMContentLoaded", function ()
       </footer>
     `;
 
-    document.getElementById("current-year").innerText = new Date().getFullYear();
+  document.getElementById("current-year").innerText = new Date().getFullYear();
 });
