@@ -37,16 +37,26 @@ document.addEventListener("DOMContentLoaded", function ()
 
 document.addEventListener("DOMContentLoaded", function ()
 {
-  // Get current page URL
-  const currentPage = window.location.pathname.split("/").pop();
+  let currentPage = window.location.pathname.split("/").pop();
 
-  // Select all nav links
+  if (currentPage === "" || currentPage === "/")
+  {
+    currentPage = "index.html";
+  }
+
+  if (!currentPage.toLowerCase().endsWith(".html") && currentPage !== "")
+  {
+    currentPage += ".html";
+  }
+
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-  // Loop through each link and check if it matches the current page
   navLinks.forEach(link =>
   {
-    if (link.getAttribute("href") === currentPage)
+    const hrefAttribute = link.getAttribute("href");
+    const hrefNodeValue = link.attributes.href?.nodeValue;
+
+    if (hrefAttribute === currentPage || hrefNodeValue === currentPage)
     {
       link.classList.add("active");
     } else
