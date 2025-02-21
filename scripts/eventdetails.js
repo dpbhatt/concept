@@ -107,3 +107,17 @@ function loadEventDetails() {
 }
 
 document.addEventListener("DOMContentLoaded", loadEventDetails);
+
+// Initialize the current image index
+let currentImageIndex = 0;
+
+function changeEventImage() {
+  const eventImageElement = document.getElementById("eventImage");  
+  eventImageElement.src = images[currentImageIndex];  
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+// Change image every 10 seconds
+setInterval(changeEventImage, 10000);
+
+changeEventImage();
